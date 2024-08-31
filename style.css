@@ -1,0 +1,486 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: JosefinSans;
+    src: url(./Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family:JosefinSans2 ;
+    src: url(./Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+    
+}
+body{
+    background:linear-gradient(rgba(255, 255, 255, 0.138), rgba(255, 255, 255, 0.395)),
+    url(./image/Coffee\ espresso\ template1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family:JosefinSans2;
+    color: rgb(136, 69, 36); 
+}
+/* Navigation bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Logo img{
+    width: 200px;
+    height: 190px;
+    padding-left: 60px;
+    padding-top: 20px;
+    
+}
+
+/* Anchor Tag */
+#ancor-tags{
+    margin-top: 5px;
+    padding-right: 50px;
+}
+#ancor-tags a{
+color: white;
+background-color: rgb(156, 71, 71);
+border-radius: 10px;
+text-align: center;
+text-decoration: none;
+padding: 10px 50px;
+
+}
+/* Home Section */
+.Home{
+    display: flex;
+    justify-content: space-evenly;
+}
+.home-heading{
+    padding: 150px 70px;
+    font-size: large;
+    font-family:JosefinSans ;
+}
+/* For Home section H1  */
+.home-heading h1{
+    font-size: 45px;
+}
+h1 em{
+font-size: 60px;
+font-style: normal;
+}
+
+.home-heading p{
+    padding: 5px 0;
+}
+.home-heading button{
+    color: rgb(75,38,20);
+    border: 1px solid rgb(75,38,20);
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Offer Section */
+.offer{
+    margin-top: -90px;
+    margin-left: -100px;
+}
+/* img styling in the Offer */
+.offer img{
+    width: 400px;
+}
+.Home-image{
+    width: 100px;
+    padding-bottom: 150px;
+    
+}
+.Home-image{
+    position: relative;
+    animation: move 1s both;
+}
+@keyframes move{
+    from{right: 0px; }
+    to{right: 100px;}
+}
+
+/* Coffee Section */
+.coffee-contanier{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.coffee-contanier .coffee-cup{
+    width: 310px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    background:linear-gradient(rgba(0, 0, 0, 0.265), rgba(0, 0, 0, 0.265)),
+    url(./image/back4.jpg);
+    background-size: cover;
+    color: #fff;
+    transition: tranform 0.4s ease-in 0.4s;
+}
+.coffee-cup:hover{
+    transform: scale(1.1);
+}
+
+.coffee-cup img{
+    width: 200px;
+    height: 180px;
+    position: relative;
+    top: -40px;
+    border-radius: 50%;
+}
+.coffee-cup h2{
+    margin-top: -15px;
+}
+.coffee-cup p{
+    font-size: 15px;
+    padding: 5px;
+}
+/* Image Text Section */
+.image-text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 40px;
+    margin-top: 30px;
+
+}
+.image-text img{
+    width: 400px;
+    margin-right: 40px;
+}
+
+.image-text p{
+    font-size: x-large;
+    font-weight: 500;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+/* Cold Coffee Section */
+.cold-coffee-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+    margin-top: 100px;
+}
+/* coffe-cup section */
+.cold-coffee-container .cofe-cup{
+width: 320px;
+height: 305px;
+border: 3px solid white;
+text-align: center;
+background-color: rgba(105,117,83,0.589);
+transition: transform 0.4s ease-in 0.09s;
+}
+.cofe-cup :hover{
+    transform: translateY(-10px);
+    
+}
+.cofe-cup img{
+    padding: 30px 0;
+    width: 150px;
+    height: 250px;
+    padding-left: 30px;
+}
+.cold-coffee-container .text-body{
+    background-color: #fff;
+    padding: 10px;
+
+    
+}
+
+.cofe-cup .text-body h4{
+    font-size: 3vh;
+
+}
+
+
+
+/* Completed */
+
+
+
+
+
+/* Small Screen 1000px */
+@media(max-width:1000px){
+#Logo img{
+width: 70px;
+height: 70px;
+padding-right: 30px;
+}
+#ancor-tags{
+    padding-right: 50px;
+}
+#ancor-tags a{
+    padding: 10px 10px;
+}
+
+
+/* HOME STYLING */
+.home-heading{
+    padding: 150px 50px;
+}
+.home-heading h1{
+    font-size: 35px;
+}
+.home-heading em{
+    font-size: 50px;
+}
+.home-heading button{
+    padding: 8px;
+    margin-top: 8px
+}
+
+/* OFFER SECTION */
+.offer{
+    margin-top: -70px;
+    margin-left: -70px;
+}
+.offer img{
+    width: 300px;
+}
+.Home-image{
+    width: 300px;
+}
+@keyframes move{
+    from{right: 0px}
+    to{right: 50px;}
+}
+
+/* IMAGE SECTION */
+.image-text{
+    margin: 40px 10px;
+    margin-top: 30px;
+}
+.image-text img{
+    width: 33%;
+}
+.image-text p{
+    padding: 10px 20px;
+    font-size: 2.5vh;
+    font-weight: 450px;
+}
+/* Coffee Section */
+.coffee-contanier{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 90px;
+}
+.coffee-contanier .coffee-cup{
+    width: 190px;
+    height: 190px;
+}
+.coffee-cup img{
+    width: 150px;
+    height: 130px;
+}
+.coffee-cup h2{
+    margin-top: -15px;
+}
+.coffee-cup p{
+    font-size: 13px;
+    padding: 5px;
+}
+}
+
+
+
+
+
+
+
+
+
+/* Completed */
+
+
+/* Tabs */
+@media(max-width:780px){
+    #Logo img{
+        height: 60px;
+        width: 60px;
+    }
+    #ancor-tags a{
+        font-size: 2.7vh;
+        padding: 5px;
+    }
+    /* Home Section */
+    .home-heading{
+        padding: 150px 20px;
+    }
+
+    /* H1 Styling */
+
+    .home-heading h1{
+        font-size: 25px;
+    }
+    h1 em{
+        font-size: 40px;
+    }
+    .home-heading img{
+        width: 15px;
+        padding: 5px;
+    }
+    .home-heading p{
+        font-size: small;
+    }
+    .home-heading button{
+        padding: 5px;
+    }
+
+    /* Offer Section */
+    .offer{
+        margin-top: -70px;
+        margin-left: -70px;
+    }
+    .offer img{
+        width: 300px;
+    }
+    .Home-image{
+        width: 300px;
+    }
+    @keyframes move{
+        from{right: 0px;}
+        to{right: 5%;}
+    }
+    .image-text{
+        padding: 40px 0;
+        margin-top: 30px;
+    }
+    .image-text img{
+        width: 30%;
+    }
+    .image-text p{
+        font-size: 2vh;
+        font-weight: 400;
+        padding: 0 20px;
+    }
+
+
+    /* Coffee Section */
+    .coffee-contanier .coffee-cup{
+        width: 150px;
+        height: 170px;
+    }
+    .coffee-cup img{
+        width: 120px;
+        height: 100px;
+    }
+    .coffee-cup h2{
+        font-size: medium;
+        margin-top: -20px;
+    }
+    .coffee-cup p{
+        font-size: 1.7vh;
+    }
+
+}
+
+
+
+
+
+/* Completed */
+
+
+/* For Mobile Screen */
+@media(max-width:420px){
+    #Logo img{
+        height: 50px;
+        width: 50px;
+        padding-left: 10px;
+    }
+    #ancor-tags{
+        padding-right: 5px;
+        margin-top: 5px;
+    }
+    #ancor-tags a{
+        padding: 5px 5px;
+        font-size: 1.6vh;
+    }
+
+    /* Home Section */
+    .home-heading{
+        padding: 60px 20px;
+    }
+    .home-heading h1{
+        font-size: 3vh;
+    }
+    h1 em{
+        font-size: 4vh;
+    }
+    .home-heading img{
+        width: 10px;
+        padding: 2px;
+        margin: 8px 0;
+        margin-bottom: 0;
+    }
+    .home-heading p{
+        font-size: 1.3vh;
+    }
+    .home-heading button{
+        padding: 2px;
+        margin-left: 5px;
+        font-size: 1.3vh;
+    }
+
+    /* Offer Section */
+
+    .offer{
+        margin-top: -40px;
+    }
+    .offer img{
+        width: 140px;
+    }
+    @keyframes move {
+        from{right: 0;}
+        to{right: 5%;}    
+    } 
+    /* Coffee Section */
+    .coffee-contanier{
+        display: grid;
+        grid-template-columns: 1;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    .coffee-contanier .coffee-cup{
+        width: 250px;
+        height: 220px;
+    }
+    .coffee-cup img{
+        width: 180px;
+        height: 150px;
+    }
+    .coffee-cup h2{
+        margin-top: -15px;
+    }
+    .coffee-cup p{
+        padding: 10px;
+    }
+
+    /* IMAGE-TEXT SECTION */
+    .image-text{
+        display: grid;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .image-text img{
+        width: 140px;
+        display: block;
+        margin: 0 auto;
+    }
+    .image-text p{
+        font-size: 2.6vh;
+        font-weight: 300;
+        margin-right: 0;
+        text-align: justify;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
