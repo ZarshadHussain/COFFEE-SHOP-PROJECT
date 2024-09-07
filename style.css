@@ -60,7 +60,8 @@ padding: 10px 50px;
 }
 /* For Home section H1  */
 .home-heading h1{
-    font-size: 45px;
+    font-size: 50px;
+    margin-right: 200px;
 }
 h1 em{
 font-size: 60px;
@@ -170,10 +171,10 @@ font-style: normal;
 /* coffe-cup section */
 .cold-coffee-container .cofe-cup{
 width: 320px;
-height: 305px;
-border: 3px solid white;
+height: 308px;
+border: 5px solid white;
 text-align: center;
-background-color: rgba(105,117,83,0.589);
+background-color: rgba(161, 171, 142, 0.589);
 transition: transform 0.4s ease-in 0.09s;
 }
 .cofe-cup :hover{
@@ -184,11 +185,11 @@ transition: transform 0.4s ease-in 0.09s;
     padding: 30px 0;
     width: 150px;
     height: 250px;
-    padding-left: 30px;
+    
 }
 .cold-coffee-container .text-body{
     background-color: #fff;
-    padding: 10px;
+    padding: 12px;
 
     
 }
@@ -198,6 +199,74 @@ transition: transform 0.4s ease-in 0.09s;
 
 }
 
+/* Beans Section */
+
+.Beans-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.Beans-container div{
+    text-align: center;
+    margin-top: 150px;
+    width: 340px;
+    height: 330px;
+    border-radius: 10px;
+    /* border: 1px solid rgba(77,48,34,0.589); */
+    box-shadow: 2px 2px 10px 10px rgba(77,48,34,0.589);
+}
+.Beans-container img{
+    position: relative;
+    margin-top: 60px;
+    top: -300px;
+    width: 360px;
+}
+.Beans-container p{
+    margin-top: -340px;
+    font-size: 2vh;
+}
+
+/* HEADINGS */
+
+#heading{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    text-decoration: underline;
+    font-size: 60px;
+
+}
+
+/* Foteer Section */
+footer{
+    background:linear-gradient(rgba(0, 0, 0, 0.495), rgba(0, 0, 0, 0.495)),
+    url(./image/Coffee_Beans_Footer1.png);
+    background-size: cover;
+    display: flex;
+    margin-top: 150px;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+footer ul{
+    margin-bottom: 30px;
+}
+footer h4{
+    margin-bottom: 30px;
+}
+footer ul li{
+    list-style-type: none;
+    color: #fff;
+    padding-top: 5px;
+}
+
+footer a img{
+    width: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
 
 
 /* Completed */
@@ -285,6 +354,39 @@ padding-right: 30px;
 .coffee-cup p{
     font-size: 13px;
     padding: 5px;
+}
+
+
+/* Cold Coffe Section */
+.cofe-cup{
+    width: 180px;
+    height: 260px;
+}
+.cofe-cup h4{
+    font-size: 3.4vh;
+}
+
+/* Beans Section */
+
+.Beans-container{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.Beans-container div{
+    width: 300px;
+    height: 290px;
+}
+.Beans-container img{
+    position: relative;
+    top: -190px;
+    width: 240px;
+}
+.Beans-container p{
+    margin-top: -190px;
+    font-size: 2vh;
 }
 }
 
@@ -377,6 +479,65 @@ padding-right: 30px;
     }
     .coffee-cup p{
         font-size: 1.7vh;
+    }
+
+    /* Cold Coffe Section */
+
+    .cold-coffee-container{
+        display: grid;
+        grid-template-columns: 30% 30%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+        gap: 30px;
+    }
+    .cofe-cup{
+        width: 220px;
+        height: 255px;
+    }
+    .cold-coffee-container img{
+        padding: 30px 40px;
+        width: 100px;
+        height: 150px;
+    }
+    .text-body{
+        height: 25px;
+    }
+
+    /* Beans Section */
+
+    .Beans-container{
+        display: grid;
+        grid-template-columns: 30% 30%;
+
+    }
+    .Beans-container div{
+        width: 300px;
+        height: 300px;
+    }
+    .Beans-container img{
+        position: relative;
+        top: -200px;
+    }
+    .Beans-container p{
+        top: -500px;
+        font-size: 15px;
+    }
+
+
+    /* Footer Section */
+
+    footer{
+        margin-top: 150px;
+        padding-top: 50px;
+    }
+    footer ul li{
+        font-size: small;
+    }
+    footer img{
+        width: 15px;
+        padding: 5px;
+
     }
 
 }
@@ -483,4 +644,68 @@ padding-right: 30px;
         padding-top: 20px;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    /* Cold Coffe Section */
+    .cold-coffee-container{
+        display: grid;
+        grid-template-columns: 65%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: -10px;
+        gap: 30px;
+    }
+    .cofe-cup{
+        width: 220px;
+        height: 250px;
+    }
+    .cofe-cup img{
+        padding: 30px 40px;
+        width: 100px;
+        height: 150px;
+
+    }
+    /* Beans Section */
+    .Beans-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 70%;
+        align-items: center;
+        gap: 80px;
+        margin-top: 30px;
+    }
+    .Beans-container div{
+        width: 250px;
+        height: 250px;
+    }
+    .Beans-container img{
+        position: relative;
+        margin-top: 10px;
+        top: -150px;
+        width: 200px;
+    }
+    .Beans-container p{
+        font-size: 20px;
+        margin-top: -180px;
+    }
+
+/* Footer Section */
+
+footer{
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+footer ul li{
+    font-size: 1.3vh;
+
+}
+footer h4{
+    font-size: 1.4vh;
+}
+
+footer img{
+    width: 10px;
+    padding: 2px;
+}
+
 }
